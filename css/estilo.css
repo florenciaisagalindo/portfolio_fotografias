@@ -18,7 +18,69 @@ a{
     max-width: 800px; /*Aqui controlo el ancho del contenedor de las img, dsp cambiar si quiero tener 2 o 4*/
     margin: auto;
 }
+/*--------------------*/
+/*PARTICLES*/
+/*--------------------*/
+#particles-js{
+    width: 100%;
+    height: 800px;
+    background: url(../img/portada.jpg);
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#particles-js .contenido{
+    display: block;
+    position: absolute;
+    }
+#particles-js .contenido .bienvenidos{
+    color: seashell;
+    font-size: 50px;
+    text-align: center;
 
+}
+#particles-js .contenido .subtitulo-contenido{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #f3f3f3;
+    font-weight: 100;
+    font-family: 'Bad Script', cursive;;
+
+}
+#particles-js .contenido .solicitar-presupuesto{
+    padding: 20px 30px; 
+    border-radius: 5px;
+    border: none;
+    background: #FED136;
+    font-size: 25px;
+    color: #000;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#particles-js .contenido .solicitar-presupuesto:hover{
+    background-color: #FEC503;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    
+}
+.about .foto-perfil{
+    width: 150px;
+    height: 150px;
+    margin: auto auto;
+}
 /*--------------------*/
 /*HEADER*/
 /*--------------------*/
@@ -29,7 +91,7 @@ header{
 
 header .logo{
     text-align: center;
-    margin-bottom: 40px ;
+    margin-bottom: 30px ;
 }
 
 header .logo p{

@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap&family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio MDG Photo</title>
+<link rel="stylesheet" href="./css/estilo.css">   
+ <title>Portfolio MDG Photo</title>
 </head>
 <body>
+    <div id="particles-js">
+        <div class="contenido">
+            <h1 class="bienvenidos">MATIAS SANCHEZ</h1>
+            <h2 class="subtitulo-contenido">Fotografía</h2>
+            <button class="solicitar-presupuesto">SOLICITAR PRESUPUESTO</button>
+        </div>
+    </div>
+    <div class="about">
+        <h2>QUIÉN SOY</h2>
+        <div>
+            <img class="foto-perfil"src="./img/diente-de-leon.jpg">
+            <p>holi</p>
+        </div>
+    </div>
+
     <div class="contenedor">    
         <header>
             <div class="logo">
-                <h1>NOMBRE</h1>
-                <p>Descripción</p>
+                <h1>PORTFOLIO</h1>
             </div>
             <form action="">
                 <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
@@ -22,8 +36,10 @@
                 <a href="#" class="activo">Todos</a>
                 <a href="#">Naturaleza</a>
                 <a href="#">Ciudades</a>
-                <a href="#">Estaciones</a>
+                <a href="#">Fiestas</a>
                 <a href="#">Animales</a>
+                <a href="#">Retratos</a>
+
             </div>
         </header>
         <section class="grid" id="grid">
@@ -114,18 +130,16 @@
                 </div>
             </div>
             <div class="creado-por">
-                <p>Sitio diseñado por Florencia  Isa Galindo - <a href="#">ONE D</a></p>
+                <p>Sitio diseñado por Florencia  Isa Galindo - <a href="#">ONE D Software Factory</a></p>
             </div>
         </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-    <script type="text/javascript">
-    particlesJS("particles-js", {"particles":{"number":{"value":60,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.25,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.3,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
-    </script>
-    <script src="main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particulas.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
