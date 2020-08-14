@@ -69,21 +69,47 @@ a{
 #particles-js .contenido .solicitar-presupuesto:hover{
     background-color: #FEC503;
 }
+/*--------------------*/
+/*ABOUT*/
+/*--------------------*/
+.about-title{
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 50px;
 
-
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 .about{
     display: flex;
     flex-direction: column;
-    
+    text-align: center;
+    margin-bottom: 30px ;
 }
 .about .foto-perfil{
     width: 150px;
     height: 150px;
-    margin: auto auto;
+    border-radius: 100%
 }
+.about .about-text{
+   width: 450px;
+   margin-left: 60px;
+   padding-top: 30px;
+   text-align: start;
+}
+
+
+
 /*--------------------*/
 /*HEADER*/
 /*--------------------*/
+.contenedor{
+    background-color: yellow;
+    margin-top: 150px;
+}
 
 header{
     padding: 40px 0;
