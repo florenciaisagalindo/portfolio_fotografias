@@ -1,8 +1,11 @@
+//EFECTO DEL NAVBAR
+var navbar = document.querySelector("navbar");
 window.addEventListener("scroll", function(){
-    var navbar = document.querySelector("navbar");
     navbar.classList.toggle("sticky", window.scrollY >0)
 })
-
+window.addEventListener("scroll", function(){
+    navbar.classList.toggle("display-none", window.scrollY >300)
+})
 const grid = new Muuri('.grid',{
     layout:{
         rounding: false

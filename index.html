@@ -10,38 +10,44 @@
 </head>
 <body>
     <navbar class="">
-        <a href="" class="logo-navbar">Logo</a>
+        <a href="" class="logo-navbar">MS</a>
         <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Sobre mi</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Presupuesto</a></li>
-            <li><a href="">Contacto</a></li>
+            <li><a src="#">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#presupuesto">Presupuesto</a></li>
+            <li><a href="#footer">Contacto</a></li>
         </ul>
     </navbar>
     <div id="particles-js">
         <div class="contenido">
-            <h1 class="bienvenidos">MATIAS SANCHEZ</h1>
+            <h1 class="bienvenidos">Mariano Soler</h1>
             <h2 class="subtitulo-contenido">Fotografía</h2>
-            <button class="solicitar-presupuesto">SOLICITAR PRESUPUESTO</button>
+            <a href="#presupuesto"><button class="solicitar-presupuesto">SOLICITAR PRESUPUESTO</button></a>
         </div>
     </div>
     <div class="about">
-        <h2 class="about-title"> QUIÉN SOY</h2>
+        <h2 class="about-title" id="about"> SOBRE MÍ</h2>
+        <div class="span"></div>
         <div class="about-content">
-            <img class="foto-perfil"src="./img/diente-de-leon.jpg">
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ipsa pariatur voluptatum vero quisquam eos nulla amet, ducimus quas placeat eum, magni et facere impedit? Dolores nesciunt accusantium amet nisi.</p>
+            <img class="foto-perfil" src="./img/fotografo-3.jpg">
+            <p class="about-text">Ser fotógrafo en mi ciudad me da la oportunidad de fotografiar momentos únicos e irrepetibles.
+
+                Mi estilo es documental, me encanta retratar de forma espontánea esos instantes que suceden de forma inevitable.
+                
+                Son momentos en los que trato de pasar desapercibido para capturar imágenes con un alto componente emocional.</p>
         </div>
     </div>
 
-    <div class="contenedor">    
+    <div class="contenedor" id="portfolio">    
         <header>
-            <div class="logo">
+            <div class="logo" >
                 <h2>PORTFOLIO</h2>
+                <div class="span"></div>
             </div>
-            <form action="">
+          <!--  <form action="">
                 <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-            </form>
+            </form> -->
             <div class="categorias" id="categorias">
                 <a href="#" class="activo">Todos</a>
                 <a href="#">Naturaleza</a>
@@ -111,6 +117,63 @@
                     <img src="img/mar3.jpg" alt="">
                 </div>
             </div>
+            <div class="item" 
+            data-categoria="retratos" 
+            data-etiquetas="retratos mujer"
+            data-descripccion="Retrato"
+            >
+                <div class="item-contenido">
+                    <img src="img/retrato-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="retratos" 
+            data-etiquetas="retratos mujer"
+            data-descripccion="Retrato"
+            >
+                <div class="item-contenido">
+                    <img src="img/retrato-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="retratos" 
+            data-etiquetas="retratos mujer"
+            data-descripccion="Retrato"
+            >
+                <div class="item-contenido">
+                    <img src="img/retrato-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="fiestas" 
+            data-etiquetas="fiesta boda"
+            data-descripccion="Boda"
+            >
+                <div class="item-contenido">
+                    <img src="img/boda-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="fiestas" 
+            data-etiquetas="fiesta boda"
+            data-descripccion="Boda"
+            >
+                <div class="item-contenido">
+                    <img src="img/boda-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="fiestas" 
+            data-etiquetas="fiesta boda"
+            data-descripccion="Boda"
+            >
+                <div class="item-contenido">
+                    <img src="img/boda-3.jpg" alt="">
+                </div>
+            </div>
+
+
+
 
         </section>
         <section class="overlay" id="overlay">
@@ -121,7 +184,24 @@
             <p class="descripcion"></p>
         </section>
     </div>
-    <footer class="contenedor-footer">
+    <h2 class="title-form">PRESUPUESTO</h2>
+    <div class="span"></div>
+    <div class="contenedor-form" id="presupuesto">
+        <form class="form"> 
+            <input type="email" placeholder="Email" class="input"></input>
+            <select name="evento" class="input">
+                <option>Boda & 15 años</option>
+                <option>Eventos</option>
+                <option>Book personal</option>
+                <option>Campaña</option>
+                <option>Otro</option>
+            </select>
+            <input type="date"class="input"></input>
+            <input type="time"class="input"></input>
+        </form>
+        <button type="submit" class="button-submit">ENVIAR</button>
+    </div>
+    <footer class="contenedor-footer" id="footer">
         <div class="redes-sociales">
             <div class="contenedor-icono">
                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="twitter">
