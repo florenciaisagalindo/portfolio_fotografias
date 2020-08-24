@@ -69,6 +69,18 @@ navbar.sticky ul li a{
 navbar.display-none{
     display: none;
 }
+.toggle{
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+    line-height: 50px;
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    display: none;
+}
 a{
     text-decoration: none;
 }
@@ -362,7 +374,14 @@ header .categorias a.activo {
     border: none;
     font-size: 22px;
     font-weight: 700;
-
+}
+#error{
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    padding: 5px 7px;
+}
+.borrar-error{
+    display: none;
 }
 /*-------------------*/
 /*Footer*/
@@ -423,11 +442,85 @@ footer .creado-por a:hover {text-decoration: underline;}
 /*Mediaqueries*/
 /*-------------------*/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .grid .item{
         width: calc(50% - 20px);
     } 
     header .barra-busqueda{
         width: 100%;
+    }
+    .toggle{
+        display: inline-block;
+        left: 0;
+        padding-left: 15px;
+        padding-top: 12px;
+    }
+    .menu{
+        display: inline-block;
+        background-color: #fff4;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        top: 65px;
+        padding-left: 10px;
+        transform: translateX(-300px);
+        transition: all 1s;
+    }
+    .menu li{
+        color: #000;
+
+    }
+    .show{
+        transform: translateX(-100px);
+
+    }
+    navbar .logo-navbar{
+        position: absolute;
+        right: 0;
+        padding-right: 35px;
+    }
+    navbar .display-none{
+        display: none;
+    }
+   
+    navbar.sticky{
+        padding: 35px 100px;
+        background: transparent;
+    }
+    navbar.sticky .logo-navbar,
+    navbar.sticky ul li a{
+    color: #fff;
+    }
+    #particles-js .contenido .solicitar-presupuesto {
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+    .about-content{
+    display: flex;
+    flex-direction: column;
+    }
+    .about .about-text{
+        width: 100%;
+        font-size: 12px;
+        padding: 30px 30px;
+    }
+    .about .foto-perfil {
+        width: 100%;
+    }
+    .contenedor-form {
+        height: 500px;
+    }
+    .form{
+        flex-direction: column;
+        width: 80%;
+    } 
+    .form .input{
+        margin-bottom: 7px;
+    }
+    footer .redes-sociales {
+        padding: 0;
+    }
+    #error{
+        max-width: 300px;
     }
 }

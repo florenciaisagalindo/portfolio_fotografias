@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap&family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/estilo.css">   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="./css/estilo.css">   
  <title>Portfolio Photo</title>
 </head>
 <body>
     <navbar class="">
         <a href="" class="logo-navbar">MS</a>
-        <ul>
+        <ul class="menu">
             <li><a src="#">Inicio</a></li>
             <li><a href="#about">Sobre mí</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#presupuesto">Presupuesto</a></li>
             <li><a href="#footer">Contacto</a></li>
         </ul>
+        <div class="toggle" onclick="cambiar()">&#9776;</div>
     </navbar>
     <div id="particles-js">
         <div class="contenido">
@@ -188,18 +190,20 @@
     <div class="span"></div>
     <div class="contenedor-form" id="presupuesto">
         <form class="form"> 
-            <input type="email" placeholder="Email" class="input"></input>
-            <select name="evento" class="input">
-                <option>Boda & 15 años</option>
-                <option>Eventos</option>
-                <option>Book personal</option>
-                <option>Campaña</option>
-                <option>Otro</option>
+            <input type="email" placeholder="Email" class="input" id="email" required></input>
+            <select name="evento" class="input" id="evento" required>
+                <option value="0">Selecciona un evento</option>
+                <option value="1">Boda & 15 años</option>
+                <option value="2">Eventos</option>
+                <option value="3">Book personal</option>
+                <option value="4">Campaña</option>
+                <option value="5">Otro</option>
             </select>
-            <input type="date"class="input"></input>
-            <input type="time"class="input"></input>
+            <input type="date"class="input" id="fecha" required></input>
+            <input type="time"class="input" id="hora" required></input>
         </form>
-        <button type="submit" class="button-submit">ENVIAR</button>
+        <div id="error"></div>
+        <button type="submit" class="button-submit" onclick="return enviarFormulario()">ENVIAR</button>
     </div>
     <footer class="contenedor-footer" id="footer">
         <div class="redes-sociales">
@@ -229,6 +233,8 @@
     <script src="js/particles.js"></script>
     <script src="js/particulas.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
 
 </body>
 </html>
